@@ -1,216 +1,187 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My first Bulma website</title>
-    <link rel="stylesheet" href="css/main.css">
-  </head>
-  <body>
-    <section class="hero is-medium is-primary">
-      <div class="hero-body">
-        <div class="container">
-          <div class="columns">
-            <div class="column is-8-desktop is-offset-2-desktop">
-              <h1 class="title is-2 is-spaced">
-                Hello Bulma!
-              </h1>
-              <h2 class="subtitle is-4">
-                  Congratulations! You're running the <strong>Bulma start</strong> project.
-                  <br>
-                  It includes everything you need to <strong>build your own website</strong> with Bulma.
-              </h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
-            <div class="content">
-              <h3>What's included</h3>
-              <p>
-                The <code>npm</code> dependencies included in <code>package.json</code> are:
-              </p>
-              <ul>
-                <li>
-                  <code><a href="https://github.com/jgthms/bulma">bulma</a></code>
-                </li>
-                <li>
-                  <code><a href="https://github.com/sass/node-sass">node-sass</a></code> to compile your own Sass file
-                </li>
-                <li>
-                  <code><a href="https://github.com/postcss/postcss-cli">postcss-cli</a></code> and <code><a href="https://github.com/postcss/autoprefixer">autoprefixer</a></code> to add support for older browsers
-                </li>
-                <li>
-                  <code><a href="https://babeljs.io/docs/usage/cli/">babel-cli</a></code>,
-                  <code><a href="https://github.com/babel/babel-preset-env">babel-preset-env</a></code>
-                  and
-                  <code><a href="https://github.com/jmcriffey/babel-preset-es2015-ie">babel-preset-es2015-ie</a></code>
-                  for compiling ES6 JavaScript files
-                </li>
-              </ul>
-              <p>
-                Apart from <code>package.json</code>, the following files are included:
-              </p>
-              <ul>
-                <li>
-                  <code>.babelrc</code> configuration file for <a href="https://babeljs.io/">Babel</a>
-                </li>
-                <li>
-                  <code>.gitignore</code> common <a href="https://git-scm.com/">Git</a> ignored files
-                </li>
-                <li>
-                  <code>index.html</code> this HTML5 file
-                </li>
-                <li>
-                  <code>_sass/main.scss</code> a basic SCSS file that <strong>imports Bulma</strong> and explains how to <strong>customize</strong> your styles, and compiles to <code>css/main.css</code>
-                </li>
-                <li>
-                  <code>_javascript/main.js</code> an ES6 JavaScript that compiles to <code>lib/main.js</code>
-                </li>
-              </ul>
-              <h3>Try it out!</h3>
-              <p>
-                To see if your setup works, follow these steps:
-              </p>
-              <ol>
-                <li>
-                  <p>
-                    <strong>Move</strong> to this directory:
-                    <br>
-                    <pre><code>cd bulma-start</code></pre>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Install</strong> all dependencies:
-                    <br>
-                    <pre><code>npm install</code></pre>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Start</strong> the CSS and JS watchers:
-                    <br>
-                    <pre><code>npm start</code></pre>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <strong>Edit</strong> <code>_sass/main.scss</code> by adding the following rule at the <strong>end</strong> of the file:
-                    <br>
-                    <pre><span style="color: #22863a;">html</span> {
-  <span style="color: #005cc5;"><span style="color: #005cc5;">background-color</span></span>: <span style="color: #24292e">$green</span>;
-}</pre>
-                  </p>
-                </li>
-              </ol>
-              <p>
-                The page background should turn <strong class="has-text-success">green</strong>!
-              </p>
-              <h3>Get started</h3>
-              <p>
-                You're <strong>ready</strong> to create your own designs with Bulma. Just edit or duplicate this page, or simply create a new one!
-                <br>
-                For example, this page is <strong>only</strong> built with the following <strong>Bulma elements</strong>:
-              </p>
-            </div>
-            <table class="table is-bordered is-fullwidth">
-              <thead>
-                <tr>
-                  <th>Type</th>
-                  <th>CSS class</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>Columns</th>
-                  <td>
-                    <code><a href="http://bulma.io/documentation/columns/basics">columns</a></code>
-                    <code><a href="http://bulma.io/documentation/columns/basics">column</a></code>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Layout</th>
-                  <td>
-                    <code><a href="http://bulma.io/documentation/layout/section">section</a></code>
-                    <code><a href="http://bulma.io/documentation/layout/container">container</a></code>
-                    <code><a href="http://bulma.io/documentation/layout/footer">footer</a></code>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Elements</th>
-                  <td>
-                    <code><a href="http://bulma.io/documentation/elements/button">button</a></code>
-                    <code><a href="http://bulma.io/documentation/elements/content">content</a></code>
-                    <code><a href="http://bulma.io/documentation/elements/title">title</a></code>
-                    <code><a href="http://bulma.io/documentation/elements/title">subtitle</a></code>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Form</th>
-                  <td>
-                    <code><a href="http://bulma.io/documentation/form/general">field</a></code>
-                    <code><a href="http://bulma.io/documentation/form/general">control</a></code>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Helpers</th>
-                  <td>
-                    <code><a href="http://bulma.io/documentation/modifiers/typography-helpers/">has-text-centered</a></code>
-                    <code><a href="http://bulma.io/documentation/modifiers/typography-helpers/">has-text-weight-semibold</a></code>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="content">
-              <p>
-                If you want to <strong>learn more</strong>, follow these links:
-              </p>
-            </div>
-            <div class="field is-grouped">
-              <p class="control">
-                <a class="button is-medium is-primary" href="http://bulma.io">
-                  <strong class="has-text-weight-semibold">Bulma homepage</strong>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="css/main.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+        <meta name="description" content="Storyshare（ストーリーシェア）の週末留学は超集中型の短期留学です。フィリピン・セブ島で効率よく最短で英語学習。有名人も多数オススメ。">
+        <meta name="keywords" content="Storyshare,ストーリーシェア,留学,英語,フィリピン,セブ,セブ島,週末留学,短期留学">
+        <title>ワーキングホリデー準備はストーリーシェア（Storyshare）</title>
+    </head>
+    <body>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <img class="logo" src="img/logo.png" width="112" height="28">
                 </a>
-              </p>
-              <p class="control">
-                <a class="button is-medium is-link" href="http://bulma.io/documentation/overview/start/">
-                  <strong class="has-text-weight-semibold">Documentation</strong>
+        
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
                 </a>
-              </p>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <footer class="footer has-text-centered">
-      <div class="container">
-         <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
-            <p>
-              <strong class="has-text-weight-semibold">
-                <a href="https://www.npmjs.com/package/bulma-start">bulma-start@0.0.3</a>
-              </strong>
-            </p>
-            <p>
-              <small>
-                Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
-              </small>
-            </p>
-            <p style="margin-top: 1rem;">
-              <a href="http://bulma.io">
-                <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
+        
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="#features">
+                        セブ留学の特徴
+                    </a>
+            
+                    <a class="navbar-item" href="#about">
+                        週末留学とは
+                    </a>
+
+                    <a class="navbar-item" href="#method">
+                        サイクルラーニングメソッド
+                    </a>
+                    <a class="navbar-item" href="#storyshare">
+                        StoryShareについて
+                    </a>
+                    <a class="navbar-item" href="#application">
+                        募集要項
+                    </a>
+
+                </div>
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a class="button is-link" href="https://www.storyshare.jp/estimation_inquiry/">
+                            <strong>今すぐ無料お問い合わせ</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="section is-hero bg-hero">
+            <div class="container">
+                <div class="columns is-vcentered">
+                    <div class="hero-text column is-6 is-5-fullhd is-offset-1-fullhd">
+                        <div class="section-header">
+                            <h1 class="title is-spaced">本当に英語が使える<span class="inline-block">ワーキングホリデーへ。</span></h1>
+                            <h2 class="subtitle">ワーホリ準備で失敗しない。本当の情報を届けて、みなさんにあうワーホリを提供したい」</h2>
+                            <div class="field">
+                                <a class="button is-primary" href="#">今すぐお問い合わせ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section is-usp has-background">
+            <div class="container">
+                <h2 class="is-size-4 margin-bottom">憧れのワーホリにも<span class="inline-block">厳しい現実がある</span></h2>
+                <h3 class="margin-bottom">ワーキングホリデーを最大限に楽しみ、成功させるためには事前の正しい情報が大切です。</h3>
+
+                <div class="columns">
+                    <div class="column is-5">
+
+                        <div class="card">
+                            <div class="card-content">
+
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48">
+                                        <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">ワーホリ前</p>
+                                    </div>
+                                </div>
+                            
+                                <div class="content">
+                                    <ul>
+                                        <li>ワーホリに行けば英語が話せるようになる！</li>
+                                        <li>ワーホリ帰国後の就職も有利になる！</li>
+                                        <li>外国人の友達もたくさん作れる！</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-flex is-vcentered is-hcentered">
+                        <p class="title is-1 arrow">→</p>
+                    </div>
+
+                    <div class="column is-5">
+                        <div class="card">
+                            <div class="card-content">
+
+                                <div class="media">
+                                    <div class="media-left">
+                                        <figure class="image is-48x48">
+                                        <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                                        </figure>
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">でも現実は...</p>
+                                    </div>
+                                </div>
+                            
+                                <div class="content">
+                                    <ul>
+                                        <li>英語が伸びず日本で勉強しておけばと後悔</li>
+                                        <li>英語力不足で結局ファームかジャパレス</li>
+                                        <li>友達は日本人ばかりで余計英語は伸びない</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            
+        </section>
+
+
+        <section class="hero">
+            <div class="container text-align-center">
+                    CopyRight&copy;2017 StoryShare AllRightReserved.
+            </div>
+        </section>
+
+
+
     <script type="text/javascript" src="lib/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Get all "navbar-burger" elements
+            const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+            // Check if there are any navbar burgers
+            if ($navbarBurgers.length > 0) {
+
+                // Add a click event on each of them
+                $navbarBurgers.forEach( el => {
+                    el.addEventListener('click', () => {
+
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                    });
+                });
+            }
+        });
+
+    </script>
   </body>
 </html>

@@ -25,5 +25,90 @@ $primary-invert: $pink-invert;
 
 // 4. Import the rest of Bulma
 */
-
+$primary: coral;
 @import "../node_modules/bulma/bulma";
+
+
+
+// original stylings from here
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Helvetica', YuGothic, 'Yu Gothic Medium', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+    color: #4d4d4d
+}
+
+li {
+    font-size: 15px;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 13.5px;
+}
+
+
+// === Basic CSS helpers for Spacing ===
+
+.margin-bottom {
+    margin-bottom: 1rem;
+}
+
+
+// === Basic CSS helpers ===
+
+.text-align-center {
+    text-align: center;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.is-vcentered {
+    align-items: center;
+}
+.is-hcentered {
+    justify-content: center;
+}
+
+
+
+
+
+// === Styles for Components ===
+
+.navbar-menu {
+    font-size: 13.5px;
+}
+
+
+.is-hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.bg-hero {
+    background-image: url("../img/hero-4.jpg");
+    background-size: cover;
+    background-position-y: bottom;
+    background-position-x: left;
+}
+
+.hero-text {
+    background-color: rgba(255, 143, 27, 0.1);
+    border-radius: 1rem;
+}
+
+.subtitle {
+    color: #222;
+}
+
+@media screen and (max-width:768px) {
+    .arrow {
+        transform: rotateZ(90deg);
+    }
+}
