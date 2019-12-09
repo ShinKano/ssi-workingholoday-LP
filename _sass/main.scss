@@ -46,12 +46,21 @@ li {
 }
 
 p {
-    font-size: 13.5px;
+    font-size: 16px;
+}
+
+h4 {
+    margin-bottom: 1rem;
 }
 
 
 // === Basic CSS helpers for Spacing ===
-
+.margin-top {
+    margin-top: 1rem;
+}
+.margin-top-2 {
+    margin-top: 2rem;
+}
 .margin-bottom {
     margin-bottom: 1rem;
 }
@@ -61,6 +70,22 @@ p {
 
 .text-align-center {
     text-align: center;
+}
+
+.marker-pen {
+    background: linear-gradient(transparent 60%, #ffe999 0%);
+    display: inline;
+}
+
+.heading-1 {
+    border-radius: 4px;
+    background-color: powderblue;
+    padding: 12px;
+    display: inline-block;
+}
+
+.listify::before {
+    content: "• ";
 }
 
 .inline-block {
@@ -73,8 +98,14 @@ p {
 .is-hcentered {
     justify-content: center;
 }
+.is-grid {
+    align-items: center;
+    display: grid;
+}
 
-
+.bg-ghostwhite {
+    background-color: ghostwhite;
+}
 
 
 
@@ -107,8 +138,55 @@ p {
     color: #222;
 }
 
+.styled-heading {
+    margin:  0;                 /* デフォルトCSS打ち消し */
+    font-size:  24px;           /* 文字サイズ指定 */
+    position:  relative;        /* 位置調整 */
+    font-weight:  normal;       /* 文字の太さ調整 */
+    display:  inline-block;     /* インラインブロックにする */
+    padding-top: 40px;          /* 余白指定 */
+    padding-left: 40px;         /* 余白指定 */
+    padding-bottom: 20px;       /* 余白指定 */
+}
+.styled-heading:before {
+    content:  '';               /* 空白の要素を作る */
+    background-color: #ffeaac;  /* 背景色指定 */
+    display:  block;            /* ブロック要素にする */
+    position:  absolute;        /* 位置調整 */
+    left:  0;                   /* 位置調整 */
+    height: 90px;               /* 高さ指定 */
+    width: 90px;                /* 幅指定 */
+    border-radius:  50%;        /* 丸くする */
+    top: 0;                     /* 位置調整 */
+    z-index:  -1;               /* 重なり調整 */
+}
+.card {
+    border-radius: 4px;
+}
+
+
+// === Other Original Components ===
+
 @media screen and (max-width:768px) {
     .arrow {
         transform: rotateZ(90deg);
     }
+}
+
+.cross {
+    background-image: url(../img/cross.svg);
+    height: 240px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.balloon {
+    background-image: url(../img/balloon-1.svg);
+    height: 5rem;
+    width: 5rem;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
