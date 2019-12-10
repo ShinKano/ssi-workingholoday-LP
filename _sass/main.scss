@@ -115,6 +115,12 @@ h4 {
     font-size: 13.5px;
 }
 
+.border-around-text {
+    border: 1px solid;
+    display: inline-block;
+    padding: 1rem;
+}
+
 
 .is-hero {
     height: 90vh;
@@ -128,6 +134,13 @@ h4 {
     background-position-y: bottom;
     background-position-x: left;
 }
+
+.bg-1 {
+    background-image: url("../img/bg-1.jpg");
+    background-size: cover;
+    background-position-y: center;
+}
+
 
 .hero-text {
     background-color: rgba(255, 143, 27, 0.1);
