@@ -53,6 +53,10 @@ h4 {
     margin-bottom: 1rem;
 }
 
+iframe {
+    width: 100%;
+    border-radius: 4px;
+}
 
 // === Basic CSS helpers for Spacing ===
 .margin-top {
@@ -70,6 +74,14 @@ h4 {
 
 .text-align-center {
     text-align: center;
+}
+
+.color-yellow {
+    color: #f1c000;
+}
+
+.align-self-center {
+    align-self: center;
 }
 
 .marker-pen {
@@ -153,7 +165,6 @@ h4 {
 
 .styled-heading {
     margin:  0;                 /* デフォルトCSS打ち消し */
-    font-size:  24px;           /* 文字サイズ指定 */
     position:  relative;        /* 位置調整 */
     font-weight:  normal;       /* 文字の太さ調整 */
     display:  inline-block;     /* インラインブロックにする */
@@ -173,6 +184,35 @@ h4 {
     top: 0;                     /* 位置調整 */
     z-index:  -1;               /* 重なり調整 */
 }
+
+
+.point-heading {
+    position: relative;
+    border-top: solid 2px $primary;
+    border-bottom: solid 2px $primary;
+    // background: ghostwhite;
+    line-height: 1.4;
+    padding: 0.8em 0.5em;
+    margin: 2em 0 0.5em;
+  }
+  
+.point-heading:after {
+    /*タブ*/
+    position: absolute;
+    font-family: "Font Awesome 5 Free",'Quicksand','Avenir','Arial',sans-serif;
+    content: '\f0a7\ POINT';
+    background: $primary;
+    color: #fff;
+    left: 0px;
+    bottom: 100%;
+    border-radius: 5px 5px 0 0;
+    padding: 5px 7px 3px;
+    font-size: 0.7em;
+    line-height: 1;
+    letter-spacing: 0.05em;
+  }
+
+
 .card {
     border-radius: 4px;
 }
@@ -183,6 +223,13 @@ h4 {
 @media screen and (max-width:768px) {
     .arrow {
         transform: rotateZ(90deg);
+    }
+}
+
+@media screen and (max-width:768px) {
+    .reverse {
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 
