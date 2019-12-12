@@ -7004,6 +7004,9 @@ iframe {
 .margin-top-2 {
   margin-top: 2rem; }
 
+.margin-top-10px {
+  margin-top: 10px; }
+
 .margin-bottom {
   margin-bottom: 1rem; }
 
@@ -7016,6 +7019,24 @@ iframe {
 .align-self-center {
   align-self: center; }
 
+.first-letter {
+  line-height: 2rem; }
+
+.first-letter:first-letter {
+  font-size: 2em;
+  color: #7172ac; }
+
+.position-relative {
+  position: relative; }
+
+.border-radius {
+  border-radius: 4px; }
+
+img.profile-picture {
+  border-radius: 999px;
+  height: 100px;
+  width: 100px; }
+
 .marker-pen {
   background: linear-gradient(transparent 60%, #ffe999 0%);
   display: inline; }
@@ -7025,6 +7046,22 @@ iframe {
   background-color: powderblue;
   padding: 12px;
   display: inline-block; }
+
+.heading-2 {
+  position: relative;
+  color: white;
+  background: #81d0cb;
+  line-height: 1.4;
+  padding: 0.5em 0.5em 0.5em 1.8em;
+  display: inline-block;
+  border-radius: 8px; }
+
+.heading-2:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f14a";
+  position: absolute;
+  left: 0.5em;
+  /*左端からのアイコンまでの距離*/ }
 
 .listify::before {
   content: "• "; }
@@ -7059,10 +7096,10 @@ iframe {
   align-items: center; }
 
 .bg-hero {
-  background-image: url("../img/hero-4.jpg");
+  background-image: url("../img/hero-6.jpg");
   background-size: cover;
-  background-position-y: bottom;
-  background-position-x: left; }
+  background-position-y: top;
+  background-position-x: right; }
 
 .bg-1 {
   background-image: url("../img/bg-1.jpg");
@@ -7070,8 +7107,11 @@ iframe {
   background-position-y: center; }
 
 .hero-text {
-  background-color: rgba(255, 143, 27, 0.1);
   border-radius: 1rem; }
+  .hero-text .title {
+    color: #fff !important; }
+  .hero-text .subtitle {
+    color: #fff !important; }
 
 .subtitle {
   color: #222; }
@@ -7139,6 +7179,14 @@ iframe {
 
 .card {
   border-radius: 4px; }
+
+.bordered-div {
+  border: 2px solid #81d0cb;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: white;
+  position: relative;
+  top: -32px; }
 
 @media screen and (max-width: 768px) {
   .arrow {
